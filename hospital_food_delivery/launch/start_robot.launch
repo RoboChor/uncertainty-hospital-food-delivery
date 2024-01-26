@@ -1,0 +1,10 @@
+<launch>
+    <group ns="turtlebot1">
+      <node name="robot_control" pkg="hospital_food_delivery" type="robot_controller.py" args="-ns turtlebot1"/>
+    </group>
+    
+    <!-- <group ns="turtlebot2">
+      <node name="robot_control" pkg="hospital_food_delivery" type="robot_controller.py" args="ns=turtlebot2"/>
+    </group> -->
+    
+  </launch>
