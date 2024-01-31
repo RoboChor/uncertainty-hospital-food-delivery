@@ -11,7 +11,7 @@ cd uncertainty-hospital-food-delivery
 
 * For obtaining the Docker image for Mission Control Adaptation
 ```
-docker build . -t hfd:latest
+docker build . -t hfd
 ```
 
 * Start running the docker image
