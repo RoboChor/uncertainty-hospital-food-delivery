@@ -4,6 +4,10 @@
 pip install docker 
 ```
 
+* Enter the directory
+```
+cd uncertainty-hospital-food-delivery
+```
 
 * For obtaining the Docker image for Mission Control Adaptation
 ```
