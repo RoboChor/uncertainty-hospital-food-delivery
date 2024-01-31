@@ -1,4 +1,8 @@
 ## Instructions for installing the Adaptive mission control project
+* Install docker (If it's not installed already) by following the steps from their official website
+    https://docs.docker.com/engine/install/
+* Follow the post-installation steps to give docker sudo privileges
+    https://docs.docker.com/engine/install/linux-postinstall/
 * Install dependencies for python
 ```
 pip install docker 
@@ -16,7 +20,7 @@ docker build . -t hfd
 
 * Start running the docker image
 ```
-./gui-docker --name hfd_container hfd:v1.1 sleep infinity
+./gui-docker --name hfd_container hfd sleep infinity &
 ```
 
 *  (If you are running Linux) Start terminal #1
