@@ -15,7 +15,7 @@ def main(args=None):
         sca = args["self_care_ability"]
         alo = args["alone"]
     file_location = "/root/catkin_ws/src/hospital_food_delivery/launch/mission_scenario.launch"
-    
+    json_location = "/root/catkin_ws/src/hospital_food_delivery/worlds/status.json"
     sel = str(sca) + str(alo)
     ps_sels = ["00","01","10","11"]
     
@@ -30,6 +30,16 @@ def main(args=None):
             
     with open(file_location, 'w') as file:
         file.write(s)
+
+    # update also the json file that informs the robot controller
+    o = {
+        "alone": args["alone"],
+        "self_care_ability": args["self_care_ability"]
+    }
+
+    with open(json_location, 'w') as jfile:
+        json.dump(o,jfile)
+
 
 if __name__ == "__main__":
     

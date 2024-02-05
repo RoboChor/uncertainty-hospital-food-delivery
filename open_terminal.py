@@ -39,12 +39,13 @@ def filter_container(img_base,c_id, c_name):
     return sc
 
 if __name__ == "__main__":
-    img_base = "hfd:v1.1"
+    img_base = "hfd"
     cnt_name = "hfd_container"
     sc = filter_container(img_base,"",cnt_name)
     if sc is None:
         print("ERR1: No container found with such id or name.")
         exit(1)
     sc_id = sc['id']
-    cmd = f'gnome-terminal -- bash -c "docker exec -it {sc_id} bash; exec bash"'
-    os.popen(cmd)
+    cmd = f'docker exec -it {sc_id} bash'
+    print(f"Enter the following command into the terminal to get inside the docker container:\n{cmd}")
+    # os.popen(cmd)
