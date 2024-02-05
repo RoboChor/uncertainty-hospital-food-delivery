@@ -32,6 +32,15 @@ RUN git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git ~/catkin_ws/src
     git clone https://github.com/ROBOTIS-GIT/turtlebot3.git ~/catkin_ws/src/turtlebot3 && \
     git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git ~/catkin_ws/src/turtlebot3_simulations
 
+WORKDIR /root/catkin_ws/src/turtlebot3
+RUN git checkout 66681b33749c44e7d9022253ac210ef2da7843a0 
+
+WORKDIR /root/catkin_ws/src/turtlebot3_msgs
+RUN git checkout c39bfe6c198a6b11f87abe5efd83bfb3bfa923a5
+
+WORKDIR /root/catkin_ws/src/turtlebot3_simulations
+RUN git checkout 8241af04a4e56e656d4be24a5c3971e3359bf751
+
 
 COPY ./hospital_food_delivery /root/catkin_ws/src/hospital_food_delivery
 
