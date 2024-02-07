@@ -47,8 +47,8 @@ if __name__ == "__main__":
     
     try:
         args = {
-        "self_care_ability" : int(input("Enter the value for self_care_ability(0 or 1): ")),
-        "alone" : int(input("Enter the value for alone(0 or 1): "))
+        "self_care_ability" : int(input("Enter the value for self_care_ability (0 or 1): ")),
+        "alone" : int(input("Enter the value for alone (0 or 1): "))
         }
     except:
         raise ValueError()
