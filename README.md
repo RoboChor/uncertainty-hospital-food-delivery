@@ -11,7 +11,7 @@ This study has been designed, developed, and reported by the following investiga
 - Marco Autili (University of L'Aquila, Italy)
 - Patrizio Pelliccione (Gran Sasso Science Institute, Italy)
 
-For any information, interested researchers can contact us by writing an email to [gianluca.filippone@graduate.univaq.it](mailto:gianluca.filippone@univaq.it)
+For any information, interested researchers can contact us by writing an email to [gianluca.filippone@univaq.it](mailto:gianluca.filippone@univaq.it)
 
 ## Mission Specification
 ### iHTN with adaptable task
