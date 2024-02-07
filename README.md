@@ -15,19 +15,22 @@ For any information, interested researchers can contact us by writing an email t
 
 ## Mission Specification
 ### iHTN with adaptable task
-![mission](</hospital-food-delivery/mission_img/hospital-food-delivery_mission.jpg>)
+<p align="center">
+  <img src="/hospital_food_delivery/mission_img/hospital-food-delivery_mission.jpg" alt="mission">
+</p>
 
 ### Adaptation alternatives
 #### Alternative #1
 (To be activated if the inpatient is able to grab the food by himself/herself or if there is another human in the room)
-
-![alternative 1](</hospital-food-delivery/mission_img/hospital-food-delivery_alternative1.jpg>)
+<p align="center">
+  <img src="/hospital_food_delivery/mission_img/hospital-food-delivery_alternative1.jpg" alt="alternative 1">
+</p>
 
 #### Alternative #2
 (To be activated if the inpatient is unable to grab the food and if there is no other human in the room)
-
-![alternative 2](</hospital-food-delivery/mission_img/hospital-food-delivery_alternative2.jpg>)
-
+<p align="center">
+  <img src="/hospital_food_delivery/mission_img/hospital-food-delivery_alternative2.jpg" alt="alternative 2">
+</p>
 
 ## Repository Structure
 ```
@@ -111,7 +114,7 @@ roslaunch hospital_food_delivery mission_scenario.launch
 ```
 
 ### Run the simulation
-> [!NOTE]  
+> [!IMPORTANT]  
 > To run the experimentation three open terminals on the Docker container are required: the first one is the one already used to launch the Gazebo simulation; the second and third run the agents behavior.
 >
 > The steps to access a new terminal inside the containers are the same as done before.
